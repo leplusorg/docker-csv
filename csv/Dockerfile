@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM alpine:latest
 
 RUN apk --update --no-cache add coreutils csvtool gawk grep python3 sed \
     && rm -rf /var/cache/apk/*
