@@ -9,21 +9,13 @@ Assuming that you have a CSV file `foo.csv` and that you want to extract the col
 ### Mac/Linux
 
 ```
-$ docker run --rm -it --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/csv csvsql --query "select f.bar from foo as f" /tmp/foo.csv
+$ cat foo.csv | docker run --rm -i --net=none thomasleplus/csv csvsql --table foo --query "select bar from foo"
 ```
 
 ### Windows
 
-In `cmd`:
-
 ```
-$ docker run --rm -it --net=none -v "%cd%:/tmp" thomasleplus/csv csvsql --query "select f.bar from foo as f" /tmp/foo.csv
-```
-
-In PowerShell:
-
-```
-$ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/csv csvsql --query "select f.bar from foo as f" /tmp/foo.csv
+$ type foo.csv | docker run --rm -i --net=none thomasleplus/csv csvsql --table foo --query "select bar from foo"
 ```
 
 ## Help
@@ -31,5 +23,5 @@ $ docker run --rm -it --net=none -v "${PWD}:/tmp" thomasleplus/csv csvsql --quer
 To know more command line options of one of the csvtk command:
 
 ```
-$ docker run --rm -it --net=none thomasleplus/csv csvsql -h
+$ docker run --rm -i --net=none thomasleplus/csv csvsql -h
 ```
