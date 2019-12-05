@@ -2,9 +2,9 @@
 
 Docker container to run CSV manipulation utitilies (csvtool, csvkit...).
 
-## Example
+## Example not using the filesystem
 
-Assuming that you have a CSV file `foo.csv` and that you want to extract the column named `bar`:
+Let's say that you have a CSV file `foo.csv` and that you want to extract the column named `bar`:
 
 ### Mac/Linux
 
@@ -16,6 +16,30 @@ cat foo.csv | docker run --rm -i --net=none thomasleplus/csv csvsql --table foo 
 
 ```
 type foo.csv | docker run --rm -i --net=none thomasleplus/csv csvsql --table foo --query "select bar from foo"
+```
+
+## Example using the filesystem
+
+Same thing, assuming that you have a CSV file `foo.csv` and that you want to extract the column named `bar`:
+
+### Mac/Linux
+
+```
+docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" thomasleplus/csv csvsql --query "select bar from foo" /tmp/foo.csv
+```
+
+### Windows
+
+In `cmd`:
+
+```
+docker run --rm -t --net=none -v "%cd%:/tmp" thomasleplus/csv csvsql --query "select bar from foo" /tmp/foo.csv
+```
+
+In PowerShell:
+
+```
+docker run --rm -t --net=none -v "${PWD}:/tmp" thomasleplus/csv csvsql --query "select bar from foo" /tmp/foo.csv
 ```
 
 ## Help
