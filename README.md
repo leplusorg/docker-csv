@@ -23,5 +23,5 @@ $ type foo.csv | docker run --rm -i --net=none thomasleplus/csv csvsql --table f
 To know more command line options of one of the csvtk command:
 
 ```
-$ docker run --rm -i --net=none thomasleplus/csv csvsql -h
+$ docker run --rm --net=none thomasleplus/csv csvsql -h
 ```
