@@ -7,6 +7,7 @@ Docker container to run CSV manipulation utitilies (csvtool, csvkit...).
 ![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/csv)
 ![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/csv)
 ![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/csv)
+![Docker Version](https://img.shields.io/docker/v/thomasleplus/csv?sort=semver)
 
 ## Example not using the filesystem
 
