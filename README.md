@@ -2,10 +2,11 @@
 
 Docker container to run CSV manipulation utitilies (csvtool, csvkit...).
 
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/csv.svg)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/csv.svg)
-![Docker Automated](https://img.shields.io/docker/automated/thomasleplus/csv.svg)
-![Docker Build](https://img.shields.io/docker/build/thomasleplus/csv.svg)
+![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-csv/Docker%20Image%20CI)
+![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/csv)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/csv)
+![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/csv)
+![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/csv)
 
 ## Example not using the filesystem
 
