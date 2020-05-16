@@ -2,6 +2,11 @@
 
 Docker container to run CSV manipulation utitilies (csvtool, csvkit...).
 
+![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/csv.svg)
+![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/csv.svg)
+![Docker Automated](https://img.shields.io/docker/automated/thomasleplus/csv.svg)
+![Docker Build](https://img.shields.io/docker/build/thomasleplus/csv.svg)
+
 ## Example not using the filesystem
 
 Let's say that you have a CSV file `foo.csv` and that you want to extract the column named `bar`:
