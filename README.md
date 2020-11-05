@@ -1,6 +1,6 @@
 # CSV
 
-Docker container to run CSV manipulation utitilies (csvtool, csvkit...).
+Docker container to run CSV manipulation utitilies (csvkit...).
 
 ![GitHub Build](https://img.shields.io/github/workflow/status/thomasleplus/docker-csv/Docker%20Image%20CI)
 ![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/csv)
