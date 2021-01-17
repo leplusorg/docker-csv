@@ -2,12 +2,12 @@
 
 Docker container to run CSV manipulation utitilies (csvkit...).
 
-![Docker Build](https://github.com/thomasleplus/docker-csv/workflows/Docker/badge.svg)
-![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/csv)
-![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/csv)
-![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/csv)
-![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/csv)
-![Docker Version](https://img.shields.io/docker/v/thomasleplus/csv?sort=semver)
+[![Docker Build](https://github.com/thomasleplus/docker-csv/workflows/Docker/badge.svg)](https://github.com/thomasleplus/docker-csv/actions?query=workflow:"Docker")
+[![Docker Stars](https://img.shields.io/docker/stars/thomasleplus/csv)](https://hub.docker.com/r/thomasleplus/csv)
+[![Docker Pulls](https://img.shields.io/docker/pulls/thomasleplus/csv)](https://hub.docker.com/r/thomasleplus/csv)
+[![Docker Automated](https://img.shields.io/docker/cloud/automated/thomasleplus/csv)](https://hub.docker.com/r/thomasleplus/csv)
+[![Docker Build](https://img.shields.io/docker/cloud/build/thomasleplus/csv)](https://hub.docker.com/r/thomasleplus/csv)
+[![Docker Version](https://img.shields.io/docker/v/thomasleplus/csv?sort=semver)](https://hub.docker.com/r/thomasleplus/csv)
 
 ## Example not using the filesystem
 
