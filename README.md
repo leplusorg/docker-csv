@@ -51,7 +51,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/csv csvsql --query "sel
 
 ## Help
 
-To know more command line options of one of the csvtk command:
+To know more command-line options of one of the csvtk command:
 
 ```bash
 docker run --rm --net=none leplusorg/csv csvsql -h
