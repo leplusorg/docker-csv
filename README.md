@@ -13,15 +13,15 @@ Docker container to run CSV manipulation utitilies (csvkit...).
 
 Let's say that you have a CSV file `foo.csv` and that you want to extract the column named `bar`:
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 cat foo.csv | docker run --rm -i --net=none leplusorg/csv csvsql --table foo --query "select bar from foo"
 ```
 
-### Windows
+**Windows**
 
-```
+```batch
 type foo.csv | docker run --rm -i --net=none leplusorg/csv csvsql --table foo --query "select bar from foo"
 ```
 
@@ -29,23 +29,23 @@ type foo.csv | docker run --rm -i --net=none leplusorg/csv csvsql --table foo --
 
 Same thing, assuming that you have a CSV file `foo.csv` and that you want to extract the column named `bar`:
 
-### Mac/Linux
+**Mac/Linux**
 
-```
+```bash
 docker run --rm -t --user="$(id -u):$(id -g)" --net=none -v "$(pwd):/tmp" leplusorg/csv csvsql --query "select bar from foo" /tmp/foo.csv
 ```
 
-### Windows
+**Windows**
 
 In `cmd`:
 
-```
+```batch
 docker run --rm -t --net=none -v "%cd%:/tmp" leplusorg/csv csvsql --query "select bar from foo" /tmp/foo.csv
 ```
 
 In PowerShell:
 
-```
+```pwsh
 docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/csv csvsql --query "select bar from foo" /tmp/foo.csv
 ```
 
@@ -53,7 +53,7 @@ docker run --rm -t --net=none -v "${PWD}:/tmp" leplusorg/csv csvsql --query "sel
 
 To know more command line options of one of the csvtk command:
 
-```
+```bash
 docker run --rm --net=none leplusorg/csv csvsql -h
 ```
 
