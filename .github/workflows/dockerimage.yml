@@ -18,3 +18,6 @@ jobs:
       - name: Build the Docker image
         working-directory: csv
         run: docker build .
+      - name: Test the Docker image
+        working-directory: csv
+        run: docker-compose --file docker-compose.test.yml --exit-code-from sut up
