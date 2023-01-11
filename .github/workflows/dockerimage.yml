@@ -20,4 +20,4 @@ jobs:
         run: docker build . --pull
       - name: Test the Docker image
         working-directory: csv
-        run: docker compose -f docker-compose.test.yml --pull --build --abort-on-container-exit --exit-code-from sut  up
+        run: docker compose -f docker-compose.test.yml --build --abort-on-container-exit --exit-code-from sut  up
