@@ -24,9 +24,8 @@ jobs:
           username: ${{ secrets.DOCKERHUB_USERNAME }}
           password: ${{ secrets.DOCKERHUB_TOKEN }}
       - uses: docker/build-push-action@v5
-        working-directory: csv
         with:
-          context: .
+          context: csv
           platforms: linux/amd64,linux/arm64,linux/arm/v6,linux/arm/v7
           pull: true
           push: true
