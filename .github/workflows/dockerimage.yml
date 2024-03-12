@@ -24,7 +24,7 @@ jobs:
       - uses: docker/build-push-action@v5
         with:
           context: csv
-          platforms: linux/amd64,linux/arm32/v6,linux/arm32/v7,linux/arm64/v8
+          platforms: linux/amd64
           pull: true
           push: true
           sbom: true
