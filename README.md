@@ -5,8 +5,6 @@ Docker container to run CSV manipulation utitilies (csvkit...).
 [![Docker Build](https://github.com/leplusorg/docker-csv/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-csv/actions?query=workflow:"Docker")
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
-[![Docker Automated](https://img.shields.io/docker/cloud/automated/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
-[![Docker Build](https://img.shields.io/docker/cloud/build/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/csv?sort=semver)](https://hub.docker.com/r/leplusorg/csv)
 
 ## Example not using the filesystem

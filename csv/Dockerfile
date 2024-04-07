@@ -1,7 +1,7 @@
 FROM alpine:3.19.1
 
 # hadolint ignore=DL3018
-RUN apk --update --no-cache add coreutils gawk grep g++ icu-dev python3 python3-dev py3-pip sed \
+RUN apk --update --no-cache add coreutils csvq gawk grep g++ icu-dev python3 python3-dev py3-pip sed \
     && rm -rf /var/cache/apk/*
 
 # hadolint ignore=DL3013
