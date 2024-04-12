@@ -16,3 +16,5 @@ RUN adduser -D "${USER}"
 USER "${USER}"
 
 WORKDIR "${HOME}"
+
+HEALTHCHECK NONE
