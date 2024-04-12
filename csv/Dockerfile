@@ -6,3 +6,15 @@ RUN apk --update --no-cache add coreutils csvq gawk grep g++ icu-dev python3 pyt
 
 # hadolint ignore=DL3013
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages csvkit
+
+ARG USER=default
+
+ENV HOME "/home/${USER}"
+
+RUN adduser -D "${USER}"
+
+USER "${USER}"
+
+WORKDIR "${HOME}"
+
+HEALTHCHECK NONE
