@@ -2,6 +2,7 @@
 
 Docker container to run CSV manipulation utitilies (csvkit...).
 
+[![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](https://github.com/leplusorg/docker-csv/blob/main/csv/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-csv/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-csv/actions?query=workflow:"Docker")
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
