@@ -7,6 +7,8 @@ Docker container to run CSV manipulation utitilies (csvkit...).
 [![Docker Stars](https://img.shields.io/docker/stars/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
 [![Docker Pulls](https://img.shields.io/docker/pulls/leplusorg/csv)](https://hub.docker.com/r/leplusorg/csv)
 [![Docker Version](https://img.shields.io/docker/v/leplusorg/csv?sort=semver)](https://hub.docker.com/r/leplusorg/csv)
+[![CII Best Practices](https://bestpractices.coreinfrastructure.org/projects/10076/badge)](https://bestpractices.coreinfrastructure.org/projects/10076)
+[![OpenSSF Scorecard](https://api.securityscorecards.dev/projects/github.com/leplusorg/docker-csv/badge)](https://securityscorecards.dev/viewer/?uri=github.com/leplusorg/docker-csv)
 
 ## Example not using the filesystem
 
