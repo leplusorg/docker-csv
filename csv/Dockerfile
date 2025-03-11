@@ -10,14 +10,14 @@ ARG USER_ID=1000
 ARG USER_GECOS=Default
 
 # hadolint ignore=DL3018
-RUN apk --update --no-cache add coreutils csvq gawk grep g++ icu-dev python3 python3-dev py3-pip sed \
+RUN apk --update --no-cache add coreutils csvq gawk grep g++ icu-dev py3-pip sed \
     && rm -rf /var/cache/apk/*
 
 SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
     csvkit==2.1.0 \
-    && msg="$(pip list --outdated | grep -i -e csvkit || true)" \
+    && msg="$(pip3 list --outdated | grep -i -e '^csvkit ' || true)" \
     && if [ -n "${msg}" ]; then \
        >&2 echo "ERROR: outdated: ${msg}" ; \
        exit 1 ; \
