@@ -13,8 +13,15 @@ ARG USER_GECOS=Default
 RUN apk --update --no-cache add coreutils csvq gawk grep g++ icu-dev python3 python3-dev py3-pip sed \
     && rm -rf /var/cache/apk/*
 
-# hadolint ignore=DL3013
-RUN pip3 install --no-cache-dir --upgrade --break-system-packages csvkit
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+
+RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
+    csvkit==2.1.0 \
+    && msg="$(pip list --outdated | grep -i -e csvkit || true)" \
+    && if [ -n "${msg}" ]; then \
+       >&2 echo "ERROR: outdated: ${msg}" ; \
+       exit 1 ; \
+    fi
 
 RUN adduser \
   --home "${USER_HOME}" \
