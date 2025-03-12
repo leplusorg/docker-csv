@@ -9,11 +9,11 @@ ARG USER_HOME=/home/default
 ARG USER_ID=1000
 ARG USER_GECOS=Default
 
+SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
+
 # hadolint ignore=DL3018
 RUN apk --update --no-cache add coreutils csvq gawk grep g++ icu-dev py3-pip sed \
     && rm -rf /var/cache/apk/*
-
-SHELL ["/bin/ash", "-eo", "pipefail", "-c"]
 
 RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
     csvkit==2.1.0 \
