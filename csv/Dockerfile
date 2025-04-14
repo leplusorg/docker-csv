@@ -21,7 +21,7 @@ RUN apk -U upgrade \
     g++=14.2.0-r4 \
     icu-dev=74.2-r0 \
     py3-pip=24.3.1-r0 \
-    python3=3.12.9-r0 \
+    python3=3.12.10-r0 \
     sed=4.9-r2 \
     && if apk -u list | grep -q -e . ; then \
       apk -u list ; \
