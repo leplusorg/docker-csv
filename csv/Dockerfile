@@ -15,7 +15,7 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 RUN apk -U upgrade \
     && apk add \
     coreutils=9.5-r2 \
-    csvq=1.18.1-r16 \
+    csvq=1.18.1-r17 \
     gawk=5.3.1-r0 \
     grep=3.11-r0 \
     g++=14.2.0-r4 \
