@@ -16,11 +16,11 @@ RUN apk -U upgrade \
     && apk add \
     coreutils=9.5-r2 \
     csvq=1.18.1-r17 \
-    gawk=5.3.1-r0 \
-    grep=3.11-r0 \
-    g++=14.2.0-r4 \
-    icu-dev=74.2-r0 \
-    py3-pip=24.3.1-r0 \
+    gawk=5.3.2-r1 \
+    grep=3.12-r0 \
+    g++=14.2.0-r6 \
+    icu-dev=76.1-r0 \
+    py3-pip=25.1.1-r0 \
     python3=3.12.10-r1 \
     sed=4.9-r2 \
     && if apk -u list | grep -q -e . ; then \
