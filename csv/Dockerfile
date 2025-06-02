@@ -14,7 +14,7 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 # hadolint ignore=DL3019
 RUN apk -U upgrade \
     && apk add \
-    coreutils=9.5-r2 \
+    coreutils=9.7-r1 \
     csvq=1.18.1-r17 \
     gawk=5.3.2-r1 \
     grep=3.12-r0 \
