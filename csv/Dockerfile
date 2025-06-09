@@ -16,7 +16,9 @@ RUN apk -U upgrade \
     && apk add \
     coreutils=9.7-r1 \
     csvq=1.18.1-r17 \
+    curl=8.14.1-r0 \
     gawk=5.3.2-r1 \
+    git=2.49.0-r0 \
     grep=3.12-r0 \
     g++=14.2.0-r6 \
     icu-dev=76.1-r0 \
