@@ -32,6 +32,14 @@ RUN apk -U upgrade \
     && apk cache clean \
     && rm -rf /var/cache/apk/*
 
+RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
+    csvkit==2.1.0 \
+    && msg="$(pip3 list --outdated | grep -i -e '^csvkit ' || true)" \
+    && if [ -n "${msg}" ]; then \
+       >&2 echo "ERROR: outdated: ${msg}" ; \
+       exit 1 ; \
+    fi
+
 RUN adduser \
   --home "${USER_HOME}" \
   --uid "${USER_ID}" \
@@ -44,11 +52,3 @@ USER "${USER_NAME}"
 ENV HOME="${USER_HOME}"
 
 WORKDIR "${HOME}"
-
-RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
-    csvkit==2.1.0 \
-    && msg="$(pip3 list --outdated | grep -i -e '^csvkit ' || true)" \
-    && if [ -n "${msg}" ]; then \
-       >&2 echo "ERROR: outdated: ${msg}" ; \
-       exit 1 ; \
-    fi
