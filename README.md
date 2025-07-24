@@ -1,6 +1,6 @@
 # CSV
 
-Multi-platform Docker container with utilities to process CSV (csvkit, csvcut, csvgrep, csvsql, csvjson, csvq...).
+Multi-platform Docker container with utilities to process CSV (`csvkit`, `csvcut`, `csvgrep`, `csvsql`, `csvjson`, `csvq`...).
 
 [![Dockerfile](https://img.shields.io/badge/GitHub-Dockerfile-blue)](csv/Dockerfile)
 [![Docker Build](https://github.com/leplusorg/docker-csv/workflows/Docker/badge.svg)](https://github.com/leplusorg/docker-csv/actions?query=workflow:"Docker")
