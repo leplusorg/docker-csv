@@ -20,8 +20,6 @@ RUN apk -U upgrade \
     gawk=5.3.2-r2 \
     git=2.49.1-r0 \
     grep=3.12-r0 \
-    g++=14.2.0-r6 \
-    icu-dev=76.1-r1 \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
     sed=4.9-r2 \
