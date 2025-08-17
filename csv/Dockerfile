@@ -20,21 +20,20 @@ RUN apk -U upgrade \
     gawk=5.3.2-r2 \
     git=2.49.1-r0 \
     grep=3.12-r0 \
+    pipx=1.7.1-r0 \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
     sed=4.9-r2 \
-    && if apk -u list | grep -q -e . ; then \
-      apk -u list ; \
+    && if apk -u list | tee -a /dev/stderr | grep -q -e . ; then \
       exit 1 ; \
     fi \
     && apk cache clean \
     && rm -rf /var/cache/apk/*
 
-RUN pip3 install --no-cache-dir --upgrade --break-system-packages \
+RUN pipx ensurepath --global \
+    && pipx install --global \
     csvkit==2.1.0 \
-    && msg="$(pip3 list --outdated | grep -i -e '^csvkit ' || true)" \
-    && if [ -n "${msg}" ]; then \
-       >&2 echo "ERROR: outdated: ${msg}" ; \
+    && if pipx upgrade-all --global | tee -a /dev/stderr | grep -q -e . ; then \
        exit 1 ; \
     fi
 
