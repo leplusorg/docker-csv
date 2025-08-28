@@ -22,4 +22,5 @@ services:
         pipx --version # pipx
         python --version # python3
         sed --version # sed
+        yq --version # yq-go
       '
