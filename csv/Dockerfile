@@ -24,6 +24,7 @@ RUN apk -U upgrade \
     py3-pip=25.1.1-r0 \
     python3=3.12.11-r0 \
     sed=4.9-r2 \
+    yq-go=4.46.1-r1 \
     && apk cache clean \
     && rm -rf /var/cache/apk/*
 
