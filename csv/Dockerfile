@@ -31,7 +31,8 @@ RUN apk upgrade --no-cache \
 
 RUN pipx ensurepath --global \
     && pipx install --global \
-    csvkit==2.1.0
+    csvkit==2.1.0 \
+    remarshal==1.2.0
 
 RUN adduser \
   --home "${USER_HOME}" \
