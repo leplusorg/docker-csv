@@ -24,7 +24,7 @@ RUN apk upgrade --no-cache \
     pandoc-cli=3.6.4-r0 \
     pipx=1.7.1-r0 \
     py3-pip=25.1.1-r0 \
-    python3=3.12.11-r0 \
+    python3=3.12.12-r0 \
     sed=4.9-r2 \
     yq-go=4.47.2-r0 \
     && apk cache --no-cache clean \
