@@ -30,11 +30,11 @@ RUN apk upgrade --no-cache \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
-COPY requirements.txt requirements.txt
+COPY requirements.txt /tmp/requirements.txt
 
 RUN pipx ensurepath --global \
-    && xargs -a requirements.txt -n 1 pipx install --global \
-    && rm -f requirements.txt
+    && xargs -a /tmp/requirements.txt -n 1 pipx install --global \
+    && rm -f /tmp/requirements.txt
 
 RUN adduser \
   --home "${USER_HOME}" \
