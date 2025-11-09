@@ -30,10 +30,11 @@ RUN apk upgrade --no-cache \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
+COPY requirements.txt requirements.txt
+
 RUN pipx ensurepath --global \
-    && pipx install --global \
-    csvkit==2.1.0 \
-    remarshal==1.2.0
+    && xargs -a requirements.txt -n 1 pipx install --global \
+    && rm -f requirements.txt
 
 RUN adduser \
   --home "${USER_HOME}" \
