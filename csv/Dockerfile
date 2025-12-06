@@ -14,13 +14,13 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.7-r1 \
-    csvq=1.18.1-r20 \
+    csvq=1.18.1-r21 \
     curl=8.14.1-r2 \
-    dasel=2.8.1-r8 \
+    dasel=2.8.1-r9 \
     gawk=5.3.2-r2 \
     git=2.49.1-r0 \
     grep=3.12-r0 \
-    miller=6.13.0-r8 \
+    miller=6.13.0-r9 \
     pandoc-cli=3.6.4-r0 \
     pipx=1.7.1-r0 \
     py3-pip=25.1.1-r0 \
