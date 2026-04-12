@@ -20,13 +20,13 @@ RUN apk upgrade --no-cache \
     gawk=5.3.2-r2 \
     git=2.52.0-r0 \
     grep=3.12-r0 \
-    miller=6.15.0-r6 \
+    miller=6.15.0-r7 \
     pandoc-cli=3.8.2.1-r0 \
     pipx=1.8.0-r0 \
     py3-pip=25.1.1-r1 \
     python3=3.12.13-r0 \
     sed=4.9-r2 \
-    yq-go=4.49.2-r4 \
+    yq-go=4.49.2-r5 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
