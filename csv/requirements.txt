@@ -1,2 +1,2 @@
 csvkit==2.2.0
-remarshal==2.0.0
+remarshal==2.0.1
