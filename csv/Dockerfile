@@ -15,7 +15,7 @@ RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.11-r0 \
     csvq=1.18.1-r27 \
-    curl=8.20.0-r1 \
+    curl=8.21.0-r0 \
     dasel=2.8.1-r15 \
     gawk=5.3.2-r2 \
     git=2.54.0-r0 \
