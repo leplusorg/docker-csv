@@ -14,7 +14,7 @@ SHELL ["/bin/ash", "-euo", "pipefail", "-c"]
 RUN apk upgrade --no-cache \
     && apk add --no-cache \
     coreutils=9.11-r0 \
-    csvq=1.18.1-r27 \
+    csvq=1.18.1-r28 \
     curl=8.22.0-r0 \
     dasel=2.8.1-r16 \
     gawk=5.3.2-r2 \
