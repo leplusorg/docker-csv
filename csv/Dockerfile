@@ -16,17 +16,17 @@ RUN apk upgrade --no-cache \
     coreutils=9.11-r0 \
     csvq=1.18.1-r28 \
     curl=8.22.0-r0 \
-    dasel=2.8.1-r15 \
+    dasel=2.8.1-r16 \
     gawk=5.3.2-r2 \
     git=2.54.0-r0 \
     grep=3.12-r0 \
-    miller=6.16.0-r5 \
+    miller=6.16.0-r6 \
     pandoc-cli=3.10-r0 \
     pipx=1.14.0-r0 \
     py3-pip=26.1.2-r0 \
     python3=3.14.7-r1 \
     sed=4.9-r2 \
-    yq-go=4.53.3-r0 \
+    yq-go=4.53.3-r1 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
