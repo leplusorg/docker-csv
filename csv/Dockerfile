@@ -20,7 +20,7 @@ RUN apk upgrade --no-cache \
     gawk=5.3.2-r2 \
     git=2.54.0-r0 \
     grep=3.12-r0 \
-    miller=6.16.0-r5 \
+    miller=6.16.0-r6 \
     pandoc-cli=3.10-r0 \
     pipx=1.14.0-r0 \
     py3-pip=26.1.2-r0 \
