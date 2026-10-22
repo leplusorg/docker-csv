@@ -26,7 +26,7 @@ RUN apk upgrade --no-cache \
     py3-pip=26.1.2-r0 \
     python3=3.14.8-r0 \
     sed=4.9-r2 \
-    yq-go=4.53.3-r1 \
+    yq-go=4.53.3-r2 \
     && apk cache --no-cache clean \
     && rm -rf /var/cache/apk/*
 
